@@ -1,4 +1,4 @@
-import { Flex, Icon, Link, Text, useColorModeValue } from "@chakra-ui/react";
+import { Flex, Icon, Text,  } from "@chakra-ui/react";
 // import { useNavigate } from "react-router-dom";
 
 const navItems = ({ text, icon, location,close,className,id }) => {

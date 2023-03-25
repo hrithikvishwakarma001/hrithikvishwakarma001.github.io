@@ -42,14 +42,13 @@ const Header = () => {
 				<GridItem colSpan='2' width={{ base: "full", md: "90%" }}>
 					<Box maxW='80rem'>
 						<Heading
-							fontFamily={"caveat"}
 							size={"2xl"}
-							fontWeight='extrabold'
 							mb={4}
 							color={useColorModeValue("black", "gray.400")}
 							id='user-detail-name'>
 							Hi, I'm Hrithik Vishwakarma
 						</Heading>
+
 						<Text
 							id='user-detail-intro'
 							fontSize='xl'

@@ -1,5 +1,5 @@
 import React from "react";
-import { Center, Heading, Text, useColorModeValue, VStack } from "@chakra-ui/react";
+import { Center, Heading, Text, VStack } from "@chakra-ui/react";
 export default function About({heading,paragraph,id}) {
 	return (
 		<Center

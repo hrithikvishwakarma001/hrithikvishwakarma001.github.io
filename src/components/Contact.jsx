@@ -4,7 +4,6 @@ import {
 	Flex,
 	FormControl,
 	FormLabel,
-	Heading,
 	HStack,
 	IconButton,
 	Input,
@@ -22,7 +21,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { useRef } from "react";
-import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
 import { MdEmail, MdOutlineEmail } from "react-icons/md";
 import { CgPhone } from "react-icons/cg";
 export default function Contact() {

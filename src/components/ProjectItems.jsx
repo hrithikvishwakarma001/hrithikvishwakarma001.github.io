@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Stack, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box,  Stack,  useColorModeValue } from "@chakra-ui/react";
 import ScrollContainer from "../utils/ScrollContainer";
 const ProjectItems = () => {
 	return (
