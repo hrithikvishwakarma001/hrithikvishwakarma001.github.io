@@ -62,13 +62,14 @@ const Header = () => {
 						</Text>
 						<a
 							href='https://drive.google.com/file/d/1YY07wH41LhM9WpmetL3n-E4c5MoTxfyX/view?usp=share_link'
-							target='_blank'>
+							target='_blank'
+							rel='noreferrer'>
 							<Button
 								size='lg'
 								mt='35px'
 								pr={4}
 								color={useColorModeValue("black", "gray.400")}
-								id='resume-link-1'>
+								id='resume-button-1'>
 								My Resume
 								<Image
 									src='https://em-content.zobj.net/source/noto-emoji-animations/344/fire_1f525.gif'

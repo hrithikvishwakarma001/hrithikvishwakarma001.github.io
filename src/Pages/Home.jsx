@@ -26,6 +26,7 @@ const CONFETTI_DARK = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2
 const Home = () => {
 	return (
 		<Box
+		  id='home'
 			bg={useColorModeValue("gray.100", "gray.900")}
 			css={{
 				backgroundImage: useColorModeValue(

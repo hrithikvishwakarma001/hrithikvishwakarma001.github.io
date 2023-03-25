@@ -76,8 +76,6 @@ const PackageTier = ({
 				spacing={3}
 				textAlign='start'
 				className='project-tech-stack'
-				// fontFamily={"cursive"}
-				// display={{ base: "none", md: "none", lg: "block" }}
 			>
 				<ListItem display='flex' alignItems={"center"}>
 					<ListIcon as={ExternalLinkIcon} color='green.500' />
