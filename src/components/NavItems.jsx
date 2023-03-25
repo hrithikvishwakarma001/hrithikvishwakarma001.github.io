@@ -7,10 +7,11 @@ const navItems = ({ text, icon, location,close,className,id }) => {
 		<a
 			id={id}
 			className={className}
-			target={text == "Resume" ? "_blank" : "_self"}
+			rel='noreferrer'
+			target={text === "Resume" ? "_blank" : "_self"}
 			href={
-				text == "Resume"
-					? "https://drive.google.com/file/d/1YY07wH41LhM9WpmetL3n-E4c5MoTxfyX/view"
+				text === "Resume"
+					? "https://drive.google.com/file/d/1IwC2GA6rCVmCCzWRN82bWFFqpYDpCDqo/view?usp=share_link"
 					: location
 			}
 			textunderlineoffset='5px'>
@@ -27,7 +28,7 @@ const navItems = ({ text, icon, location,close,className,id }) => {
 				// _hover={{
 				// 	bg: useColorModeValue("gray.200", "#111111"),
 				// }}
-				>
+			>
 				<Icon
 					as={icon}
 					fontSize='25'
@@ -38,7 +39,7 @@ const navItems = ({ text, icon, location,close,className,id }) => {
 					fontWeight={700}
 					fontSize='18'
 					// color={useColorModeValue("gray.600", "gray.200")}
-					>
+				>
 					{text}
 				</Text>
 			</Flex>
