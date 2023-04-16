@@ -153,14 +153,6 @@ const Skills = () => {
 										"gray.400"
 									)}
 									_hover={{
-										bg: useColorModeValue(
-											"black",
-											"gray.400"
-										),
-										color: useColorModeValue(
-											"white",
-											"black"
-										),
 										cursor: "pointer",
 									}}
 									className='skills-card'>

@@ -44,7 +44,7 @@ const Education = () => {
 				gridGap={6}
 				placeItems='center'
 				bg={useColorModeValue("white", "#000000")}>
-				<GridItem width={{ base: "full", md: "90%" }} h='100%'>
+				<GridItem width={{ base: "full", md: "70%" }} h='100%'>
 					<Box
 						h='100%'
 						maxW='80rem'
@@ -122,7 +122,7 @@ const Education = () => {
 						</Tag>
 					</Box>
 				</GridItem> */}
-				<GridItem width={{ base: "full", md: "90%" }} h='100%'>
+				<GridItem width={{ base: "full", md: "70%" }} h='100%'>
 					<Box
 						h='100%'
 						maxW='80rem'
