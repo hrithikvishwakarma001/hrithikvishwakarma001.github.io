@@ -151,6 +151,7 @@ const PackageTier = ({
 				alt={typePlan}
 				border='2px dashed gray'
 			/>
+			
 			<List spacing={3} textAlign='start' className='project-tech-stack'>
 				<ListItem display='flex' alignItems={"center"}>
 					<ListIcon as={ExternalLinkIcon} color='green.500' />
