@@ -1,25 +1,28 @@
-import { Flex, Icon, Text,  } from "@chakra-ui/react";
+import { Flex, Icon, Text } from "@chakra-ui/react";
 // import { useNavigate } from "react-router-dom";
 
-const navItems = ({ text, icon, location,close,className,id }) => {
+const navItems = ({ text, icon, location, close, className, id }) => {
 	// const navigate = useNavigate();
 	return (
 		<a
 			id={id}
 			className={className}
 			rel='noreferrer'
-			target={text === "Resume" ? "_blank" : "_self"}
-			download='Hritik-Vishwakarma-Resume.pdf'
+			// target={text === "Resume" ? "_blank" : "_self"}
+			download={text === "Resume" ? "Hritik-Vishwakarma-Resume.pdf" : ""}
 			href={
 				text === "Resume"
 					? "/public/Hritik-Vishwakarma-Resume.pdf"
 					: location
 			}
-			onClick={() =>
-				window.open(
-					"https://drive.google.com/file/d/1IwC2GA6rCVmCCzWRN82bWFFqpYDpCDqo/view?usp=share_link",
-					"_blank"
-				)
+			onClick={
+				text === "Resume"
+					? () =>
+							window.open(
+								"https://drive.google.com/file/d/1IwC2GA6rCVmCCzWRN82bWFFqpYDpCDqo/view?usp=share_link",
+								"_blank"
+							)
+					: null
 			}
 			textunderlineoffset='5px'>
 			<Flex

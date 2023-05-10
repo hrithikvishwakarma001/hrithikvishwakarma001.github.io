@@ -75,7 +75,6 @@ const Header = () => {
 							}>
 							<a
 								id='resume-link-1'
-								target='_blank'
 								download='Hritik-Vishwakarma-Resume.pdf'
 								href='/public/Hritik-Vishwakarma-Resume.pdf'
 								rel='noreferrer'>
