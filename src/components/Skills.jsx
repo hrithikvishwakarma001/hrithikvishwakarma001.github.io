@@ -116,7 +116,7 @@ const Skills = () => {
 					<Heading
 						size={"xl"}
 						mb={10}
-						ml='6'
+						ml={{ base: "0", md: "6"}}
 						// fontFamily={"cursive"}
 						color={useColorModeValue("black", "gray.400")}
 						>
@@ -130,8 +130,8 @@ const Skills = () => {
 							display='grid'
 							gridTemplateColumns={{
 								base: "repeat(1, 1fr)",
-								md: "repeat(1, 1fr)",
-								lg: "repeat(2, 1fr)",
+								md: "repeat(2, 1fr)",
+								lg: "repeat(3, 1fr)",
 								"2xl": "repeat(4, 1fr)",
 							}}
 							gridGap='1rem'>

@@ -9,10 +9,17 @@ const navItems = ({ text, icon, location,close,className,id }) => {
 			className={className}
 			rel='noreferrer'
 			target={text === "Resume" ? "_blank" : "_self"}
+			download='Hritik-Vishwakarma-Resume.pdf'
 			href={
 				text === "Resume"
-					? "https://drive.google.com/file/d/1IwC2GA6rCVmCCzWRN82bWFFqpYDpCDqo/view?usp=share_link"
+					? "/public/Hritik-Vishwakarma-Resume.pdf"
 					: location
+			}
+			onClick={() =>
+				window.open(
+					"https://drive.google.com/file/d/1IwC2GA6rCVmCCzWRN82bWFFqpYDpCDqo/view?usp=share_link",
+					"_blank"
+				)
 			}
 			textunderlineoffset='5px'>
 			<Flex

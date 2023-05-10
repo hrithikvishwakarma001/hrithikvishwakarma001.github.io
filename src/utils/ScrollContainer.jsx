@@ -163,7 +163,7 @@ const PackageTier = ({
 					alignItems={"center"}
 					className='project-description"'>
 					<ListIcon as={FaCheckCircle} color='green.500' />
-					{tag}
+					<p>{tag}</p>
 				</ListItem>
 				<ListItem display='flex' alignItems={"center"}>
 					<ListIcon as={CalendarIcon} color='green.500' />

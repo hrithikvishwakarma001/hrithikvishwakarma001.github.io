@@ -40,12 +40,15 @@ const Education = () => {
 				templateColumns={{
 					base: "repeat(1, 1fr)",
 					md: "repeat(2, 1fr)",
+					lg: "repeat(2, 1fr)",
+					"xl": "repeat(3, 1fr)",
 				}}
 				gridGap={6}
 				placeItems='center'
 				bg={useColorModeValue("white", "#000000")}>
 				<GridItem width={{ base: "full", md: "70%" }} h='100%'>
 					<Box
+						boxShadow={useColorModeValue("lg", "dark-lg")}
 						h='100%'
 						maxW='80rem'
 						p='5'
@@ -84,19 +87,22 @@ const Education = () => {
 						</Badge>
 					</Box>
 				</GridItem>
-				{/* <GridItem width={{ base: "full", md: "90%" }}>
+				<GridItem width={{ base: "full", md: "70%" }}>
 					<Box
+						boxShadow={useColorModeValue("lg", "dark-lg")}
+						h='100%'
 						maxW='80rem'
 						rounded={"lg"}
 						p='5'
 						bg={useColorModeValue("gray.100", "gray.800")}>
-						<Tag
+						<Badge
 							size={"md"}
 							colorScheme='yellow'
-							// fontFamily={"cursive"}
+							fontWeight='400'
+							// // fontFamily={"cursive"}
 							mb='4'>
-							Aug 2023 - 2026
-						</Tag>
+							Aug 2023 - present
+						</Badge>
 						<Heading
 							size={"md"}
 							// fontFamily={"cursive"}
@@ -113,17 +119,19 @@ const Education = () => {
 							<br />
 							Swami Vivekanand PG College
 						</Text>
-						<Tag
+						<Badge
 							size={"md"}
+							fontWeight='400'
 							colorScheme='green'
 							// fontFamily={"cursive"}
 							mb='4'>
-							B.C.A (part-1)
-						</Tag>
+							B.C.A (persuing)
+						</Badge>
 					</Box>
-				</GridItem> */}
+				</GridItem>
 				<GridItem width={{ base: "full", md: "70%" }} h='100%'>
 					<Box
+						boxShadow={useColorModeValue("lg", "dark-lg")}
 						h='100%'
 						maxW='80rem'
 						rounded={"lg"}

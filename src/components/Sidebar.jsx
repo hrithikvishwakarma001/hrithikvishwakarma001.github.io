@@ -150,7 +150,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
 				icon={FiPaperclip}
 				close={onClose}
 				className='nav-link resume'
-				id='resume-button-2'
+				id='resume-link-2'
 			/>
 		</Box>
 	);

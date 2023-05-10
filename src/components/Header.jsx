@@ -54,30 +54,40 @@ const Header = () => {
 							fontSize='xl'
 							mt='30px'
 							// fontFamily={"cursive"}
+							as='p'
 							color={useColorModeValue("black", "gray.400")}>
 							A fullstack focused web developer building the
 							frontend of websites and web applications that leads
 							to the success of the overall product.
 						</Text>
-						<a
-							href='https://drive.google.com/file/d/1IwC2GA6rCVmCCzWRN82bWFFqpYDpCDqo/view?usp=share_link'
-							target='_blank'
-							rel='noreferrer'>
-							<Button
-								size='lg'
-								mt='35px'
-								pr={4}
-								color={useColorModeValue("black", "gray.400")}
-								id='resume-button-1'>
+
+						<Button
+							size='lg'
+							mt='35px'
+							pr={4}
+							color={useColorModeValue("black", "gray.400")}
+							id='resume-button-1'
+							onClick={() =>
+								window.open(
+									"https://drive.google.com/file/d/1IwC2GA6rCVmCCzWRN82bWFFqpYDpCDqo/view?usp=share_link",
+									"_blank"
+								)
+							}>
+							<a
+								id='resume-link-1'
+								target='_blank'
+								download='Hritik-Vishwakarma-Resume.pdf'
+								href='/public/Hritik-Vishwakarma-Resume.pdf'
+								rel='noreferrer'>
 								My Resume
-								<Image
-									src='https://em-content.zobj.net/source/noto-emoji-animations/344/fire_1f525.gif'
-									w='30px'
-									mb='1'
-									ml='1'
-								/>
-							</Button>
-						</a>
+							</a>
+							<Image
+								src='https://em-content.zobj.net/source/noto-emoji-animations/344/fire_1f525.gif'
+								w='30px'
+								mb='1'
+								ml='1'
+							/>
+						</Button>
 					</Box>
 				</GridItem>
 				<GridItem mt={4} mb={4} width={{ base: "full", md: "20rem" }}>
