@@ -10,7 +10,7 @@ import {
 	useColorModeValue,
 } from "@chakra-ui/react";
 import React from "react";
-
+import resume from "../assets/resume.pdf";
 const Header = () => {
 	return (
 		<Container
@@ -67,17 +67,19 @@ const Header = () => {
 							pr={4}
 							color={useColorModeValue("black", "gray.400")}
 							id='resume-button-1'
-							onClick={() =>
-								window.open(
-									"https://drive.google.com/file/d/1IwC2GA6rCVmCCzWRN82bWFFqpYDpCDqo/view?usp=share_link",
-									"_blank"
-								)
-							}>
+							// onClick={() =>
+							// 	window.open(
+							// 		"https://drive.google.com/file/d/1IwC2GA6rCVmCCzWRN82bWFFqpYDpCDqo/view?usp=share_link"
+							// 	)
+							// }
+							>
 							<a
+							  target="_blank"
 								id='resume-link-1'
 								download='Hritik-Vishwakarma-Resume.pdf'
-								href='/public/Hritik-Vishwakarma-Resume.pdf'
-								rel='noreferrer'>
+								href={resume}
+								rel="noreferrer"
+								>
 								My Resume
 							</a>
 							<Image

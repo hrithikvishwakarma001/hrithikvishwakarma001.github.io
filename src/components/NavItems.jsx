@@ -1,6 +1,6 @@
 import { Flex, Icon, Text } from "@chakra-ui/react";
 // import { useNavigate } from "react-router-dom";
-
+import resume from "../assets/resume.pdf"
 const navItems = ({ text, icon, location, close, className, id }) => {
 	// const navigate = useNavigate();
 	return (
@@ -8,22 +8,17 @@ const navItems = ({ text, icon, location, close, className, id }) => {
 			id={id}
 			className={className}
 			rel='noreferrer'
-			// target={text === "Resume" ? "_blank" : "_self"}
+			target={text === "Resume" ? "_blank" : "_self"}
 			download={text === "Resume" ? "Hritik-Vishwakarma-Resume.pdf" : ""}
-			href={
-				text === "Resume"
-					? "/public/Hritik-Vishwakarma-Resume.pdf"
-					: location
-			}
-			onClick={
-				text === "Resume"
-					? () =>
-							window.open(
-								"https://drive.google.com/file/d/1IwC2GA6rCVmCCzWRN82bWFFqpYDpCDqo/view?usp=share_link",
-								"_blank"
-							)
-					: null
-			}
+			href={text === "Resume" ?  resume  : location}
+			// onClick={
+			// 	text === "Resume"
+			// 		? () =>
+			// 				window.open(
+			// 					"https://drive.google.com/file/d/1IwC2GA6rCVmCCzWRN82bWFFqpYDpCDqo/view?usp=share_link"
+			// 				)
+			// 		: null
+			// }
 			textunderlineoffset='5px'>
 			<Flex
 				onClick={close}
