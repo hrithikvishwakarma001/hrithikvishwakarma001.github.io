@@ -16,7 +16,6 @@ const ProjectItems = () => {
 				boxShadow: "0 10px 50px -20px #b0c4de",
 			}}>
 			<Stack spacing={4} width={"100%"} direction={"column"}>
-
 				<ScrollContainer />
 			</Stack>
 		</Box>

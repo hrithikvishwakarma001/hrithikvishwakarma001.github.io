@@ -6,10 +6,10 @@
 
 .mySwiper {
 	width: 100%;
-	height: 60vh;
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
+	height: 70vh;
 }
 /* 
 @media (0px <= width <= 300px) {
@@ -18,20 +18,20 @@
 	}
 } */
 
-/* @media (300px <= width <= 812px) {
+@media (300px <= width <= 812px) {
 	.mySwiper {
-		height: 110vh;
+		height:65vh;
 	}
 }
 
 @media (420px <= width <= 812px) {
 	.mySwiper {
-		height: 115vh;
+		height: 60vh;
 	}
-} */
+}
 
-/* @media (812px <= width <= 1024px) {
+@media (812px <= width <= 1024px) {
 	.mySwiper {
-		height: 105vh;
+			height: 60vh;
 	}
-} */
+}

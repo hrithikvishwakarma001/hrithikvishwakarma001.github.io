@@ -133,7 +133,7 @@ const PackageTier = ({
 				e.currentTarget.style.transform = "scale(1)";
 				e.currentTarget.style.transition = "all 0.2s ease-in-out";
 			}}
-			p={3}
+			// p={3}
 			justifyContent={{
 				base: "center",
 				md: "space-around",
@@ -148,7 +148,7 @@ const PackageTier = ({
 			<Image
 				src={img}
 				w={{base:"100%",md:"20rem"}}
-				h="200px"
+				h="185px"
 				objectFit={"cover"}
 				alt={typePlan}
 				border='2px dashed gray'
