@@ -11,14 +11,14 @@
 	overflow: hidden;
 	z-index: 1;
 }
-
+/* 
 @media (0px <= width <= 300px) {
 	.mySwiper {
 		height: 110vh;
 	}
-}
+} */
 
-@media (300px <= width <= 812px) {
+/* @media (300px <= width <= 812px) {
 	.mySwiper {
 		height: 110vh;
 	}
@@ -28,10 +28,10 @@
 	.mySwiper {
 		height: 115vh;
 	}
-}
+} */
 
-@media (812px <= width <= 1024px) {
+/* @media (812px <= width <= 1024px) {
 	.mySwiper {
 		height: 105vh;
 	}
-}
+} */

@@ -9,7 +9,7 @@ const navItems = ({ text, icon, location, close, className, id }) => {
 			className={className}
 			rel='noreferrer'
 			target={text === "Resume" ? "_blank" : "_self"}
-			download={text === "Resume" ? "Hritik-Vishwakarma-Resume.pdf" : ""}
+			download={text === "Resume" ? "Hritik-Vishwakarma-Resume.pdf" : null}
 			href={text === "Resume" ?  resume  : location}
 			textunderlineoffset='5px'>
 			<Flex

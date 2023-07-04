@@ -16,17 +16,6 @@ const ProjectItems = () => {
 				boxShadow: "0 10px 50px -20px #b0c4de",
 			}}>
 			<Stack spacing={4} width={"100%"} direction={"column"}>
-				<Stack
-					p={2}
-					alignItems={"center"}
-					justifyContent={{
-						base: "flex-start",
-						md: "space-around",
-					}}
-					direction={{
-						base: "column",
-						md: "row",
-					}}></Stack>
 
 				<ScrollContainer />
 			</Stack>

@@ -14,6 +14,7 @@ import {
 	ListIcon,
 	ListItem,
 	Stack,
+	useBreakpointValue,
 	useColorModeValue,
 } from "@chakra-ui/react";
 import { FaCheckCircle, FaGithub } from "react-icons/fa";
@@ -133,9 +134,8 @@ const PackageTier = ({
 				e.currentTarget.style.transition = "all 0.2s ease-in-out";
 			}}
 			p={3}
-			// py={3}
 			justifyContent={{
-				base: "flex-start",
+				base: "center",
 				md: "space-around",
 			}}
 			direction={{
@@ -143,15 +143,18 @@ const PackageTier = ({
 				md: "column",
 				lg: "row",
 			}}
-			// w={{ base: "40%", md: "75%", lg: "100%"}}
+			transition={"all 0.2s ease-in-out"}
 			alignItems={{ md: "center" }}>
 			<Image
 				src={img}
-				w='20rem'
+				w={{base:"100%",md:"20rem"}}
+				h="200px"
+				objectFit={"cover"}
 				alt={typePlan}
 				border='2px dashed gray'
+				p="2"
 			/>
-			
+
 			<List spacing={3} textAlign='start' className='project-tech-stack'>
 				<ListItem display='flex' alignItems={"center"}>
 					<ListIcon as={ExternalLinkIcon} color='green.500' />
@@ -182,10 +185,10 @@ const PackageTier = ({
 				fontSize={"1rem"}
 				fontWeight='400'
 				px='2'
+				py="2"
 				colorScheme='purple'
 				textAlign='start'
-				maxW='325px'
-				// fontFamily={"cursive"}
+				maxW={{ base: "100%", md: "325px" }}
 				className='project-title'>
 				{typePlan}
 			</Badge>
@@ -198,7 +201,7 @@ const PackageTier = ({
 					href={github}
 					size='md'
 					boxShadow={useColorModeValue("lg", "purple.400")}
-					maxW='325px'>
+					maxW={{ base: "100%", md: "325px" }}>
 					<FaGithub fontSize={"20px"} /> &nbsp; GitHub
 				</Button>
 				<IconContext.Provider
@@ -214,7 +217,7 @@ const PackageTier = ({
 						href={deploy}
 						size='md'
 						boxShadow={useColorModeValue("lg", "purple.400")}
-						maxW='325px'>
+						maxW={{ base: "100%", md: "325px" }}>
 						<IoRocketSharp
 							color={useColorModeValue("black", "limegreen")}
 							fontSize={"20px"}
@@ -229,11 +232,12 @@ const PackageTier = ({
 };
 
 export default function ScrollContainer() {
+	const smallScreen = useBreakpointValue({ base: true, md: false });
 	return (
 		<Container maxW={{ base: "100%", md: "100%", lg: "100%" }}>
 			<Swiper
-				direction={"vertical"}
-				slidesPerView={2}
+				direction={smallScreen ? "horizontal" : "vertical"}
+				slidesPerView={smallScreen?1:2}
 				spaceBetween={20}
 				mousewheel={true}
 				modules={[Mousewheel]}

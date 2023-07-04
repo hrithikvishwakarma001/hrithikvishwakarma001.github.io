@@ -27,14 +27,15 @@ const GitHubStats = () => {
 				p={8}
 				templateColumns={{
 					base: "repeat(1, 1fr)",
-					md: "repeat(3, 1fr)",
+					md: "repeat(1, 1fr)",
+					lg: "repeat(3, 1fr)",
 				}}
 				gridGap={3}
 				placeItems='center'
 				bg={useColorModeValue("white", "#000000")}>
 				<GridItem
 					width={{ base: "full", md: "100%" }}
-					colSpan={{ base: "1", md: "2" }}
+					colSpan={{ base: "1", md: "1",lg:"2" }}
 					// border='1px solid red'
 				>
 					<GitHubCalendar
