@@ -37,7 +37,7 @@ export default function Contact() {
 			email: email.current.value,
 			msg: message.current.value,
 		};
-		console.log(user);
+		// console.log(user);
 		const url = "https://peat-puzzled-oregano.glitch.me/user";
 		if (user.name === "" || user.email === "" || user.msg === "") {
 			toast({

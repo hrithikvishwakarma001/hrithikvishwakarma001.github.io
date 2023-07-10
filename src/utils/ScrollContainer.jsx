@@ -110,7 +110,7 @@ const projects = [
 	},
 	{
 		id: 8,
-		tools: "React JS | Node JS | MognoDB | Express JS",
+		tools: "Chakra ui | MERN Stack Project",
 		tag: "Clothings fashion site",
 		span: "5 days",
 		website: "Clone of koovs.com",
@@ -122,7 +122,7 @@ const projects = [
 	},
 	{
 		id: 9,
-		tools: "React JS | Node JS | TypeScript | Tailwind CSS",
+		tools: "Tailwind CSS | MERN Stack Project",
 		tag: "Fitness site (Hackathon)",
 		span: "3 days",
 		website: "Self designed project",
@@ -143,6 +143,18 @@ const projects = [
 		github: "https://github.com/hrithikvishwakarma001/vidscoin",
 		link: "https://www.figma.com/file/e08uWkzw9Vk5PVszbrrdKi/Vidscoin?type=design&node-id=0-1&mode=design",
 		deploy: "https://vidscoin.vercel.app/",
+	},
+	{
+		id: 11,
+		tools: "OpenAI | MERN Stack Project",
+		tag: "CloseAi - Image Generator",
+		span: "1 week",
+		website: "OpenAI API",
+		img: "closeai.png",
+		typePlan: "CloseAi",
+		github: "https://github.com/hrithikvishwakarma001/CloseAI-Imaginary-Image-AI-generator.git",
+		link: "https://openai.com/blog/openai-api",
+		deploy: "https://closeai.vercel.app/",
 	},
 ];
 const reverseProjects = projects.reverse();
@@ -184,7 +196,7 @@ const PackageTier = ({
 			<Image
 				src={img}
 				w={{ base: "100%", md: "20rem" }}
-				h='185px'
+				h='170px'
 				objectFit={"cover"}
 				alt={typePlan}
 				border='2px dashed gray'
@@ -225,8 +237,10 @@ const PackageTier = ({
 				colorScheme='purple'
 				textAlign='start'
 				maxW={{ base: "100%", md: "325px" }}
-				className='project-title'>
-				{typePlan}
+				className='project-title'
+				letterSpacing={".5rem"}
+				>
+				{typePlan} 🎉
 			</Badge>
 			<Stack direction={{ base: "column", md: "row" }} spacing={4}>
 				<Button

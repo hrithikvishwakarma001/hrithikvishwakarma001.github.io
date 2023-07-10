@@ -17,6 +17,7 @@ import {
 import React from "react";
 
 const SkillsArray = [
+	{ title: "HTML", icon: "html.png"},
 	{ title: "CSS", icon: "css.png" },
 	{ title: "JavaScript", icon: "js.png" },
 	{ title: "React", icon: "react.png" },
@@ -80,7 +81,7 @@ const Skills = () => {
 							>
 							I'm a fullstack web developer building the front-end
 							of websites and web applications that leads to the
-							success of the overall product.heck out some of my
+							success of the overall product heck out some of my
 							work in the projects section. <br />
 							<br />I also like sharing content related to the
 							stuff that I have learned over the years in web
@@ -116,63 +117,22 @@ const Skills = () => {
 					<Heading
 						size={"xl"}
 						mb={10}
-						ml={{ base: "0", md: "6"}}
-						// fontFamily={"cursive"}
 						color={useColorModeValue("black", "gray.400")}
 						>
 						My Skills
 					</Heading>
 					<Stack>
 						<ButtonGroup
-							spacing='6'
 							color={useColorModeValue("black", "gray.400")}
 							variant='ghost'
 							display='grid'
 							gridTemplateColumns={{
-								base: "repeat(1, 1fr)",
+								base: "repeat(2, 1fr)",
 								md: "repeat(2, 1fr)",
 								lg: "repeat(3, 1fr)",
 								"2xl": "repeat(4, 1fr)",
 							}}
 							gridGap='1rem'>
-							<Tooltip label='HTML' placement='top-start'>
-								<Box
-									display='grid'
-									placeItems='center'
-									fontWeight='semibold'
-									p={2}
-									ml='6'
-									rounded='md'
-									bg={useColorModeValue(
-										"#e7e7e7",
-										"gray.800"
-									)}
-									w={{ base: "80%", md: "90%" }}
-									color={useColorModeValue(
-										"#666676",
-										"gray.400"
-									)}
-									_hover={{
-										cursor: "pointer",
-									}}
-									className='skills-card'>
-									<Flex align={"center"} w='100%'>
-										<Image
-											className='skills-card-img'
-											src='/html.png'
-											alt='js'
-											w='25px'
-										/>
-										<Text
-											className='skills-card-name'
-											as='span'
-											ml={{ base: "4", md: "2" }}
-											isTruncated>
-											HTML
-										</Text>
-									</Flex>
-								</Box>
-							</Tooltip>
 							{SkillsArray.map(({ title, icon }, idx) => {
 								return (
 									<Tooltip
@@ -180,6 +140,8 @@ const Skills = () => {
 										placement='top-start'
 										key={idx}>
 										<Box
+										  position={"relative"}
+											left={idx===0 && "2"}
 											className='skills-card'
 											display='grid'
 											placeItems='center'
@@ -207,8 +169,10 @@ const Skills = () => {
 												<Text
 													className='skills-card-name'
 													as='span'
-													ml={{ base: "4", md: "2" }}
-													isTruncated>
+													ml={{ base: "2", md: "2" }}
+													isTruncated
+													fontSize={["0.8em", "1em"]}
+													>
 													{title}
 												</Text>
 											</Flex>
