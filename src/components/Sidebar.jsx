@@ -84,7 +84,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
 	return (
 		<Box
 			id='nav-menu'
-			bg={useColorModeValue("white", "#000000")}
+			bg={useColorModeValue("#fff", "#000000")}
 			w={{ base: "full", md: 60 }}
 			pos='fixed'
 			h='full'

@@ -151,11 +151,6 @@ const Skills = () => {
 											bg="#e7e7e7"
 											_dark={{ bg: "gray.800",color: "gray.400" }}
 											color='#666676'
-											_hover={{
-												bg: "gray.400",
-												color: "white",
-												cursor: "pointer",
-											}}
 											w={{ base: "80%", md: "90%" }}
 											textAlign='center'>
 											<Flex align={"center"} w='100%'>

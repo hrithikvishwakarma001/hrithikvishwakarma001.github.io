@@ -41,7 +41,7 @@ const Education = () => {
 					base: "repeat(1, 1fr)",
 					md: "repeat(2, 1fr)",
 					lg: "repeat(2, 1fr)",
-					"xl": "repeat(3, 1fr)",
+					xl: "repeat(3, 1fr)",
 				}}
 				gridGap={6}
 				placeItems='center'
@@ -52,7 +52,8 @@ const Education = () => {
 						h='100%'
 						maxW='80rem'
 						p='5'
-						bg={useColorModeValue("gray.100", "gray.800")}
+						bg={useColorModeValue("gray.100", "#000")}
+						border='2px dashed #666676'
 						rounded='lg'>
 						<Badge
 							size={"md"}
@@ -60,7 +61,7 @@ const Education = () => {
 							fontWeight='400'
 							// // fontFamily={"cursive"}
 							mb='4'>
-							July 2023
+							July 2022 - July 2023
 						</Badge>
 						<Heading
 							size={"md"}
@@ -94,7 +95,8 @@ const Education = () => {
 						maxW='80rem'
 						rounded={"lg"}
 						p='5'
-						bg={useColorModeValue("gray.100", "gray.800")}>
+						bg={useColorModeValue("gray.100", "#000")}
+						border='2px dashed #666676'>
 						<Badge
 							size={"md"}
 							colorScheme='yellow'
@@ -136,14 +138,15 @@ const Education = () => {
 						maxW='80rem'
 						rounded={"lg"}
 						p='5'
-						bg={useColorModeValue("gray.100", "gray.800")}>
+						bg={useColorModeValue("gray.100", "#000")}
+						border='2px dashed #666676'>
 						<Badge
 							size={"md"}
 							fontWeight='400'
 							colorScheme='yellow'
 							// fontFamily={"cursive"}
 							mb='4'>
-							Jun 2022
+							July 2021 - May 2022
 						</Badge>
 						<Heading
 							size={"md"}

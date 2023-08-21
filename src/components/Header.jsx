@@ -66,11 +66,17 @@ const Header = () => {
 							mt='35px'
 							pr={4}
 							color={useColorModeValue("black", "gray.400")}
-							id='resume-button-1'>
+							id='resume-button-1'
+							onClick={() => {
+								window.open(
+									"https://drive.google.com/file/d/1YDvBvknJEXUsIoQEKismx1OW39pMwohA/view?usp=sharing",
+									"_blank"
+								);
+							}}>
 							<a
-								// https:target='_blank' //drive.google.com/file/d/1IwC2GA6rCVmCCzWRN82bWFFqpYDpCDqo/view?usp=share_link
 								id='resume-link-1'
 								download='Hritik-Vishwakarma-Resume.pdf'
+								target='_blank'
 								href={resume}
 								rel='noreferrer'>
 								My Resume
