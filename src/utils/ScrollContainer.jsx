@@ -9,11 +9,13 @@ import {
 	Badge,
 	Button,
 	Container,
+	Flex,
 	Image,
 	List,
 	ListIcon,
 	ListItem,
 	Stack,
+	Text,
 	useBreakpointValue,
 	useColorModeValue,
 } from "@chakra-ui/react";
@@ -35,6 +37,7 @@ const projects = [
 		github: "https://github.com/hrithikvishwakarma001/Grill-inn",
 		link: "https://shiny-cranachan-408e6a.netlify.app/",
 		deploy: "https://shiny-cranachan-408e6a.netlify.app/",
+		desc: "Grill In is a restaurant website where you can order food online. It is a single page website with a menu, contact, and home page. It is a fully responsive website.",
 	},
 	{
 		id: 2,
@@ -47,6 +50,7 @@ const projects = [
 		github: "https://github.com/hrithikvishwakarma001/lackadaisical-look-2573",
 		link: "https://www.geekbuying.com/",
 		deploy: "https://chimerical-mousse-3a41fa.netlify.app/",
+		desc: "Geekbuying leading online shop selling a wide range of consumer electronic gadgets. Buy e-bikes, e-scooter, 3d printers, vacuum cleaners, tv-boxes etc.",
 	},
 	{
 		id: 3,
@@ -59,6 +63,7 @@ const projects = [
 		github: "https://github.com/hrithikvishwakarma001/complex-oranges-7381",
 		link: "https://www.mytheresa.com/int_en/women.html",
 		deploy: "https://luxury-vacherin-56d222.netlify.app/",
+		desc: "Clothingo clone of mytheresa is the finest edit in luxury fashion for women, men and kids. Mytheresa have over 200 of the best international designers ",
 	},
 	{
 		id: 4,
@@ -71,6 +76,7 @@ const projects = [
 		github: "https://github.com/hrithikvishwakarma001/snippets-extension",
 		link: "https://marketplace.visualstudio.com/items?itemName=hrithikvishwakarma001.fetch-axios-snippets",
 		deploy: "https://marketplace.visualstudio.com/items?itemName=hrithikvishwakarma001.fetch-axios-snippets",
+		desc: "This extension contains a collection of useful code snippets for fetching data using fetch and axios libraries in JavaScript.",
 	},
 	{
 		id: 5,
@@ -83,6 +89,7 @@ const projects = [
 		github: "https://github.com/hrithikvishwakarma001/unkempt-snow-4804",
 		link: "https://www.avis.com/en/home",
 		deploy: "https://rentovento.vercel.app",
+		desc: "Rentovento clone of avis.com is Car Sales offers several finance options designed to fit your individual needs. To take advantage of our best car finance deals",
 	},
 	{
 		id: 6,
@@ -95,6 +102,7 @@ const projects = [
 		github: "https://github.com/hrithikvishwakarma001/potent-scent-4991.git",
 		link: "https://www.dollartree.com/",
 		deploy: "https://deco-ninja.vercel.app",
+		desc: "Deco-ninja clone of Dollar Tree, products perfect for restaurants, businesses, schools, churches, party planners & anyone looking for quality supplies ",
 	},
 	{
 		id: 7,
@@ -107,6 +115,7 @@ const projects = [
 		github: "https://github.com/hrithikvishwakarma001/bitter-level-627.git",
 		link: "https://www.nykaa.com/?root=logo",
 		deploy: "https://mykaa.vercel.app/",
+		desc: "Mykaa clone of nykaa, buy cosmetics & beauty products online from Nykaa, the online shopping beauty store. Browse makeup, health products & more from top beauty brands.",
 	},
 	{
 		id: 8,
@@ -119,6 +128,7 @@ const projects = [
 		github: "https://github.com/hrithikvishwakarma001/Koovs-clone-Clotho",
 		link: "https://www.koovs.com/",
 		deploy: "https://clotho.vercel.app/",
+		desc: "Clotho clone of KOOVS is the one-stop online fashion destination for all your fashion needs. Inspired by the international runways and the global street.",
 	},
 	{
 		id: 9,
@@ -131,6 +141,7 @@ const projects = [
 		github: "https://github.com/hrithikvishwakarma001/fitfusion-hackathon",
 		link: "https://fitfusion.vercel.app/",
 		deploy: "https://fitfusion.vercel.app/",
+		desc: "FitFusion is a fitness dashboard web application that provides users with a comprehensive platform to track and manage their fitness goals.",
 	},
 	{
 		id: 10,
@@ -143,6 +154,7 @@ const projects = [
 		github: "https://github.com/hrithikvishwakarma001/vidscoin",
 		link: "https://www.figma.com/file/e08uWkzw9Vk5PVszbrrdKi/Vidscoin?type=design&node-id=0-1&mode=design",
 		deploy: "https://vidscoin.vercel.app/",
+		desc: "VidsCoin a powerful and flexible creator static website solution designed to showcase your content and engage your audience.",
 	},
 	{
 		id: 11,
@@ -155,6 +167,7 @@ const projects = [
 		github: "https://github.com/hrithikvishwakarma001/CloseAI-Imaginary-Image-AI-generator.git",
 		link: "https://openai.com/blog/openai-api",
 		deploy: "https://closeai.vercel.app/",
+		desc: "CloseAi is a web application that leverages the power of OpenAI API to generate imaginary images. With CloseAi, you can create unique and captivating images that don't exist in reality.",
 	},
 ];
 const reverseProjects = projects.reverse();
@@ -168,6 +181,7 @@ const PackageTier = ({
 	website,
 	link,
 	tools,
+	desc,
 }) => {
 	return (
 		<Stack
@@ -192,7 +206,9 @@ const PackageTier = ({
 				lg: "row",
 			}}
 			transition={"all 0.2s ease-in-out"}
-			alignItems={{ md: "center" }}>
+			alignItems={{ md: "center" }}
+			// border="1px solid red"
+			>
 			<Image
 				src={img}
 				w={{ base: "100%", md: "20rem" }}
@@ -203,7 +219,9 @@ const PackageTier = ({
 				p='2'
 			/>
 
-			<List spacing={3} textAlign='start' className='project-tech-stack'>
+			<List spacing={3} textAlign='start' className='project-tech-stack'
+			display={["block","none","none","block"]}
+			>
 				<ListItem display='flex' alignItems={"center"}>
 					<ListIcon as={ExternalLinkIcon} color='green.500' />
 					<a href={link} target='_blank' rel='noreferrer'>
@@ -229,20 +247,25 @@ const PackageTier = ({
 					{tools}
 				</ListItem>
 			</List>
-			<Badge
-				fontSize={"1rem"}
-				fontWeight='400'
-				px='2'
-				py='2'
-				colorScheme='purple'
-				textAlign='start'
-				maxW={{ base: "100%", md: "325px" }}
-				className='project-title'
-				letterSpacing={".5rem"}
-				>
-				{typePlan} 🎉
-			</Badge>
-			<Stack direction={{ base: "column", md: "row" }} spacing={4}>
+			<Flex flexDir={"column"} maxW={"250px"}>
+				<Badge
+					fontSize={"1rem"}
+					fontWeight='400'
+					px='2'
+					py='2'
+					colorScheme='purple'
+					textAlign='start'
+					maxW={{ base: "100%", md: "325px" }}
+					className='project-title'
+					letterSpacing={".5rem"}>
+					{typePlan} 🎉
+				</Badge>
+				<Text
+				 noOfLines={4}
+				>{desc}</Text>
+			</Flex>
+			<Stack direction={{ base: "column", md: "row" }} spacing={4}
+			>
 				<Button
 					className='project-github-link'
 					as='a'
@@ -301,5 +324,3 @@ export default function ScrollContainer() {
 		</Container>
 	);
 }
-
-
