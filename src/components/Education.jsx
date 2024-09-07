@@ -18,18 +18,18 @@ const educationItem = [
     type: "12th",
   },
   {
-    date: "Aug 2022 - present",
-    title: "Sant Gahira Guru Vishwavidyalaya",
-    description:
-      "Bachelor of Computer Application, Chhattisgarh Swami Vivekanand PG College",
-    type: "B.C.A (persuing)",
-  },
-  {
     date: "July 2022 - July 2023",
     title: "Full Stack Web Development",
     description:
       "Masai School - India’s only live tech-learning course with Tier 1 instructors. Get real-time feedback, interactive sessions & a personalised learning experience.",
     type: "Online Course",
+  },
+  {
+    date: "Aug 2022 - Present",
+    title: "Sant Gahira Guru Vishwavidyalaya",
+    description:
+      "Bachelor of Computer Application, Chhattisgarh Swami Vivekanand PG College",
+    type: "B.C.A (persuing)",
   },
   {
     date: "9 oct 2023 - Present",
