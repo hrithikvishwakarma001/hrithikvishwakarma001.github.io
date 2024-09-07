@@ -64,10 +64,10 @@ const Skills = () => {
         <GridItem width={{ base: "full", md: "90%" }}>
           <Box maxW="80rem">
             <Heading
-              size={"xl"}
-              mb={4}
-              // fontFamily={"cursive"}
+              fontSize="4xl"
               color={useColorModeValue("black", "gray.400")}
+              fontFamily={"Signika Negative"}
+              mb={4}
             >
               Get to know me!
             </Heading>
@@ -107,9 +107,10 @@ const Skills = () => {
           height="full"
         >
           <Heading
-            size={"xl"}
-            mb={10}
+            fontSize="4xl"
             color={useColorModeValue("black", "gray.400")}
+            fontFamily={"Signika Negative"}
+            mb={10}
           >
             My Skills
           </Heading>
