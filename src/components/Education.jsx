@@ -52,9 +52,10 @@ const Education = () => {
     >
       <GridItem colSpan={3} width="97%" mb="5">
         <Heading
-          size={"lg"}
-          // fontFamily={"cursive"}
+          fontSize="4xl"
           color={useColorModeValue("black", "gray.400")}
+          fontFamily={"Signika Negative"}
+          mb={4}
           textAlign="left"
         >
           Education 📝
