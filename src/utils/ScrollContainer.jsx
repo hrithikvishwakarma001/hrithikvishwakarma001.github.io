@@ -66,20 +66,6 @@ const projects = [
     desc: "Clothingo clone of mytheresa is the finest edit in luxury fashion for women, men and kids. Mytheresa have over 200 of the best international designers ",
   },
   {
-    id: 4,
-    tools: "JavaScript",
-    tag: "Snippets-extension",
-    span: "3 days",
-    website: "Extension marketplace",
-    img: "snippets.png",
-    typePlan: "snippets",
-    github: "https://github.com/hrithikvishwakarma001/snippets-extension",
-    link: "https://marketplace.visualstudio.com/items?itemName=hrithikvishwakarma001.fetch-axios-snippets",
-    deploy:
-      "https://marketplace.visualstudio.com/items?itemName=hrithikvishwakarma001.fetch-axios-snippets",
-    desc: "This extension contains a collection of useful code snippets for fetching data using fetch and axios libraries in JavaScript.",
-  },
-  {
     id: 5,
     tools: "Javascript | React JS | Chakra UI",
     tag: "Booking site",
@@ -156,6 +142,20 @@ const projects = [
     link: "https://www.figma.com/file/e08uWkzw9Vk5PVszbrrdKi/Vidscoin?type=design&node-id=0-1&mode=design",
     deploy: "https://vidscoin.vercel.app/",
     desc: "VidsCoin a powerful and flexible creator static website solution designed to showcase your content and engage your audience.",
+  },
+  {
+    id: 4,
+    tools: "JavaScript",
+    tag: "Snippets-extension",
+    span: "3 days",
+    website: "Extension marketplace",
+    img: "snippets.png",
+    typePlan: "snippets",
+    github: "https://github.com/hrithikvishwakarma001/snippets-extension",
+    link: "https://marketplace.visualstudio.com/items?itemName=hrithikvishwakarma001.fetch-axios-snippets",
+    deploy:
+      "https://marketplace.visualstudio.com/items?itemName=hrithikvishwakarma001.fetch-axios-snippets",
+    desc: "This extension contains a collection of useful code snippets for fetching data using fetch and axios libraries in JavaScript.",
   },
   {
     id: 11,
