@@ -28,8 +28,8 @@ const educationItem = [
     date: "July 2022 - July 2023",
     title: "Full Stack Web Development",
     description:
-      "Masai School - Bangalore, India Driven by Outcomes, Fuelled by Ambitions.",
-    type: "Full Stack Web Development",
+      "Masai School - India’s only live tech-learning course with Tier 1 instructors. Get real-time feedback, interactive sessions & a personalised learning experience.",
+    type: "Online Course",
   },
   {
     date: "9 oct 2023 - Present",
