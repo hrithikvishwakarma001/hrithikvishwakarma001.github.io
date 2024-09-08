@@ -10,30 +10,17 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 
-const educationItem = [
+const experienceItem = [
   {
-    date: "July 2021 - May 2022",
-    title: "Higher Secondary Education",
-    description: "State Board, Chhattisgarh Vijay English Medium School",
-    type: "12th",
-  },
-  {
-    date: "July 2022 - July 2023",
-    title: "Full Stack Web Development",
+    date: "9 oct 2023 - Present",
+    title: "Software Development Engineer - 1 at CoinSwitch",
     description:
-      "Masai School - India’s only live tech-learning course with Tier 1 instructors. Get real-time feedback, interactive sessions & a personalised learning experience.",
-    type: "Online Course",
-  },
-  {
-    date: "Aug 2022 - Present",
-    title: "Sant Gahira Guru Vishwavidyalaya",
-    description:
-      "Bachelor of Computer Application, Chhattisgarh Swami Vivekanand PG College",
-    type: "B.C.A (persuing)",
+      "CoinSwitch is now India's largest crypto app with over 2 Crore+ users and more than 500 employees.",
+    type: "Full Time",
   },
 ].reverse();
 
-const Education = () => {
+const Experience = () => {
   return (
     <Container
       m="0"
@@ -51,7 +38,7 @@ const Education = () => {
           mb={4}
           textAlign="left"
         >
-          Education 📝
+          Experience 👨🏻‍💻
         </Heading>
       </GridItem>
       <Grid
@@ -73,8 +60,8 @@ const Education = () => {
         placeItems="center"
         bg={useColorModeValue("white", "#000000")}
       >
-        {educationItem.map((item, index) => (
-          <EducationItem
+        {experienceItem.map((item, index) => (
+          <ExperienceItem
             key={index}
             date={item.date}
             title={item.title}
@@ -87,8 +74,8 @@ const Education = () => {
   );
 };
 
-export default Education;
-const EducationItem = ({ date, title, description, type }) => {
+export default Experience;
+const ExperienceItem = ({ date, title, description, type }) => {
   return (
     <GridItem width={{ base: "full", md: "100%" }} h="100%">
       <Box
